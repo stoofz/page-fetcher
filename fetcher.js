@@ -10,7 +10,7 @@ const writeFile = function(body) {
   });
 };
 
-request(args[0], function(err, response, body) {
+const downloadPage = request(args[0], function(err, response, body) {
 
   if (err) {
     return console.log("Failed... Invalid URL");
@@ -44,4 +44,6 @@ request(args[0], function(err, response, body) {
     }
   });
 });
+
+downloadPage;
 
